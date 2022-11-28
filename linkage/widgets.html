@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <meta name="description" content="">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/ui/custom-select.css" />
+  <link rel="stylesheet" href="libs/fancybox/fancybox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/common.css">
+</head>
+
+<body class="page">
+  <!-- section top -->
+
+  <header class="header">
+    <div class="container">
+      <div class="row -header-row">
+        <div class="col-md-4 col-xl-3 -col-logo">
+          <div class="header__logo">
+            <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+          </div>
+        </div>
+        <div class="col-xl-5 -col-navbar">
+          <nav class="header__navbar navbar navbar-expand-lg navbar-light -fs-14 -vela-b">
+            <div class="header__menu">
+              <ul class="nav-menu mb-0" id="hmenu">
+                <li class="nav-item parent">
+                  <a class="nav-link" href="#">Интеграции</a>
+                  <ul class="drop-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Интеграции</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Интеграции</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item parent">
+                  <a class="nav-link" href="#">Лицензии</a>
+                  <ul class="drop-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Лицензии</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Лицензии</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item parent">
+                  <a class="nav-link" href="#">Услуги</a>
+                  <ul class="drop-menu">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Виджеты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Блог</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="col-lg-6 col-xl-3 -col-contacts">
+          <div class="header__contacts">
+            <a href="tel:+7 (927) 614-41-33" class="header-phone">+7 (927) 614-41-33</a>
+            <a href="mailto:info@linkagecrm.ru" class="header-mail">info@linkagecrm.ru</a>
+          </div>
+        </div>
+        <div class="col-xl-1 -col-burger">
+          <button class="btn burger header__burger">
+            <span class="burger__icon"></span>
+            <span class="burger__txt -red">Меню</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="drop">
+    <div class="container">
+      <!-- <div class="drop__header">
+            <div class="d-flex align-items-center">
+              <div class="header__logo">
+                <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+              </div>
+            </div>
+          </div> -->
+      <div class="drop__menu">
+        <ul class="nav-menu mb-0 -road-r -fs-20" id="dmenu">
+          <li class="nav-item parent">
+            <a class="nav-link" href="#">Интеграции</a>
+            <ul class="drop-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Интеграции</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Интеграции</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item parent">
+            <a class="nav-link" href="#">Лицензии</a>
+            <ul class="drop-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Лицензии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Лицензии</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item parent">
+            <a class="nav-link" href="#">Услуги</a>
+            <ul class="drop-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Виджеты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Блог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+      <div class="drop__consult">
+        <div class="drop__info">
+          <div class="drop__title  -road-r -fs-20">Получите часовую консультацию</div>
+          <div class="drop__subtitle -red   -road-r -fs-14">нашего специалиста</div>
+          <div class="drop__text">Оставьте заявку и наш специалист расскажет о возможностях эволюции ваших продаж</div>
+        </div>
+        <div class="drop__img"><img src="i/drop-person.png" alt=""></div>
+        <div class="drop__btn"><a href="#" class="btn btn-primary">Получить консультацию</a></div>
+      </div>
+      <div class="drop__contacts -road-r -fs-20">
+        <a href="tel:+7 (927) 614-41-33" class="drop-phone">+7 (927) 614-41-33</a>
+        <a href="mailto:info@linkagecrm.ru" class="drop-mail">info@linkagecrm.ru</a>
+      </div>
+      <div class="drop__bottom">
+        <div class="copy">© 2021 ООО "Линк Эйдж"</div>
+        <div class="copy">Все права защищены</div>
+      </div>
+    </div>
+  </div>
+  <main class="main">
+    <div class="container">
+      <h1>Виджеты</h1>
+      <div class="widgets">
+        <div class="row -widgets-row">
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Время по <span class="-red">этапу SLA</span></div>
+                      <div class="widgets-subtitle">узнай сколько времени сделка находиться на этапе</div>
+                    </div>
+                    <div class="widgets-quote">Отображение времени нахождения сделки на этапе вплоть до минуты.</div>
+                    <div class="widgets-anons">Задайте регламенты для прохождения по этапам и следите за статистикой в
+                      реальном времени! Сделки задержавшиеся на этапе дольше регламента будут подсвечиваться красным.
+                    </div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">9990 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget01.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Калькулятор</div>
+                      <div class="widgets-subtitle">Быстрые расчеты в сделке</div>
+                    </div>
+                    <div class="widgets-quote">Экономьте время на расчетах в сделках!<br>Продавайте больше!</div>
+                    <div class="widgets-anons">Задайте формулы для расчета полей и выводите необходимые расчеты в
+                      выбранные поля.</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">9990 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget02.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Местное <br>время</div>
+                      <div class="widgets-subtitle">узнай сколько времени сделка находиться на этапе</div>
+                    </div>
+                    <div class="widgets-quote">Звоните клиентам в удобное для них время!</div>
+                    <div class="widgets-anons">В карточке контакта отображается местное время клиента. <br>Определение
+                      города по номеру телефона или значению поля город.</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">5990 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget03.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Скрытие и блокировка полей</div>
+                      <div class="widgets-subtitle">ограничивать просмотр и редактирование полей</div>
+                    </div>
+                    <div class="widgets-quote">Ограничьте изменение или просмотр полей!</div>
+                    <div class="widgets-anons">Блокируйте возможность смены значения полей для выбранных пользователей
+                      или скройте их совсем.</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">9990 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget04.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Читаемые поля в сделках</div>
+                      <div class="widgets-subtitle">Теперь даже длинные значения поля будут читабельными</div>
+                    </div>
+                    <div class="widgets-quote">Длинные названия полей отображаются полностью!</div>
+                    <div class="widgets-anons">Вы сможете видеть полное название длинных полей</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">3000 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget05.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Центр <br>уведомлений</div>
+                      <div class="widgets-subtitle">Получай уведомления о важных событиях</div>
+                    </div>
+                    <div class="widgets-quote">Вы не пропустите ни одного важного уведомления и срочного сообщения в
+                      amoCRM!</div>
+                    <div class="widgets-anons">Виджет создаст всплывающее уведомление на каждое важное событие поверх
+                      любого окна в amoCRM</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">9990 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget06.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Другие сделки <br>PRO</div>
+                      <div class="widgets-subtitle">узнай какие сделки были по клиенту не выходя из сделки</div>
+                    </div>
+                    <div class="widgets-quote">Виджет отображает и перехода по любой связанной сделке с эти контактом
+                      и/или компанией!</div>
+                    <div class="widgets-anons">Больше не придется открывать новые вкладки в браузере, вносить контакт в
+                      фильтр, искать, выбирать сделки... Эти все трудности решает виджет «Другие сделки". И это еще не
+                      все.
+                      Виджет позволяет закрывать дубли сделок из текущей карточки, с указанием причины отказа.
+                      Виджет без ограничений как в бесплатной версии</div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">5990 руб</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget07.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 -widgets-col">
+            <div class="widgets-item">
+              <div class="row -h100">
+                <div class="col-md-8 col-lg-12 col-xl-8">
+                  <div class="widgets-wrap">
+                    <div class="widgets-top">
+                      <div class="widgets-title -fs-35 -road-r">Поиск по списочным полям</div>
+                      <div class="widgets-subtitle">Находи нужные значения списка</div>
+                    </div>
+                    <div class="widgets-quote">Находите нужное значения списка</div>
+                    <div class="widgets-anons">Сэкономите время с помощью виджета полях списоком, будет добавлена строка
+                      поиска по списку
+                      После установки в настройках виджета будут отображаться поля, в которые можно добавить поиск.
+                    </div>
+                    <div class="widgets-time">
+                      <span>Выберите период</span>
+                      <select name="" id="" class="custom-select">
+                        <option value="">12 месяцев</option>
+                        <option value="">6 месяцев</option>
+                        <option value="">1 месяц</option>
+                      </select>
+                    </div>
+                    <div class="widgets-bottom">
+                      <div class="widgets-btn"><a href="#" class="btn btn-primary">установить виджет</a></div>
+                      <div class="widgets-price -fs-25 -road-n">2000 руб</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-lg-12 col-xl-4">
+                  <div class="widgets-vertical">
+                    <div class="widgets-link -red -circe-b"><span>Смотреть видео</span></div>
+                    <div class="widgets-img"><img src="i/widget08.svg" alt=""></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+  </main>
+  <footer class="footer -bg-black">
+    <div class="container">
+      <div class="row -footer-row">
+        <div class="col-sm-5 col-md-4 col-lg-3 -col-flogo">
+          <div class="footer__logo">
+            <a href="/" class="logotype"><img src="i/logo.svg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 -col-fnav">
+          <nav class="footer__navbar navbar navbar-expand-lg navbar-light -fs-14 -vela-b">
+            <ul class="nav-menu mb-0 -fs-16" id="fmenu">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Интеграции</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Лицензии</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Виджеты</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Блог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-sm-7 col-md-8 col-lg-3 -col-fcontacts">
+          <div class="footer__contacts">
+            <a href="tel:+7 (927) 614-41-33" class="footer-phone">+7 (927) 614-41-33</a>
+            <a href="mailto:info@linkagecrm.ru" class="footer-mail">info@linkagecrm.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+
+        <div class="copy">© 2021 ООО "Линк Эйдж"</div>
+        <div class="copy">Все права защищены</div>
+
+      </div>
+
+    </div>
+  </footer>
+  <!-- <div class="popup" id="request">
+    <div class="popup__wrap">
+      <div class="popup__title -vela-b -fs-14 -vertical-title">заявка на турнир</div>
+      <div class="popup__header -vela-sb">Первенство России</div>
+      <div class="popup__text -fs-13">Оставьте свои контактные данные И мы вам перезвоним для уточнения информации.</div>
+      <form action="">
+        <input type="text" class="form-control" placeholder="Имя">
+        <input type="text" class="form-control" placeholder="Номер телефона">
+        <input type="submit" class="btn btn-primary" value="отправить">
+      </form>
+    </div>
+
+  </div>  -->
+
+
+
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/ui/custom-select.min.js"></script>
+  <script src="libs/fancybox/fancybox.umd.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
+</html>
