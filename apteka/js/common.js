@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			prevEl: '.news__slider-nav .swiper-button-prev',
 		},
 		breakpoints: {
-			375: {
+			320: {
 				slidesPerView: 1,
 				spaceBetween: 20,
 			},
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
 				prevEl: '.news__slider-nav .swiper-button-prev',
 			},
 			breakpoints: {
-				375: {
+				320: {
 					slidesPerView: 1,
 					spaceBetween: 20,
 				},

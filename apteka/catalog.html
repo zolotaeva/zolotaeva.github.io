@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
+	<title>Catalog</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 	<!-- style -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancyselect/fancyselect.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -201,7 +202,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-6 col-lg-5 col-md-7 col-sm-9 col-8 -col-search">
+					<div class="col-xl col-lg-3 col-sm-4 col-6-6 col-lg-5 col-md-7 col-sm-9 col-8 -col-search">
 						<div class="search-icon d-lg-none toggle-search"></div>
 						<div class="header__search">
 							<form class="form-search">
@@ -252,84 +253,682 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="section promo">
+		<div class="container">
+			<nav class="breadcrumbs__nav">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item"><a href="#">Каталог</a></li>
+					<li class="breadcrumb-item active">Название категории</li>
+				</ol>
+			</nav>
+			
+		</div>
+		<div class="section category">
 			<div class="container">
-				<div class="row">
-					<div class="col-auto col-promo">
-						<div class="promo__item" style="background: url(i/promo01.png);">
-							<div class="promo__title">Американские витамины и БАДы</div>
-							<div class="promo__text">Быстрое оформление
-								и доставка на сайте</div>
-							<a href="#" class="promo__link">В каталог</a>
+				<div class="section__top">
+					<h1 class="section__title">Заболевания нервной системы</h1>
+					<div class="category-select">
+						<select>
+							<option selected>Категория товара</option>
+							<option value="">Нарушения мозгового и периферического кровообращения</option>
+							<option value="">Успокаивающие, снотворные средства</option>
+							<option value="">Невроз</option>
+						</select>
+					</div>
+
+				</div>
+				
+				<div class="products">
+					<div class="filter products__filter">
+						<div class="row filter-row">
+							<div class="col-xl-5 ">
+								<div class="filter-item">
+									<input type="checkbox" value="Y" class="custom-checkbox" id="check1">
+									<label class="checkbox" for="check1">Показать уцененный товар</label>
+								</div>
+							</div>
+							<div class="col-xl-7">
+								<div class="filter-item">
+									<div class="select-row">
+										<div class="filter-select">
+											<select>
+												<option selected>Бренды</option>
+												<option value="">Бренд 1</option>
+												<option value="">Бренд 2</option>
+												<option value="">Бренд 3</option>
+												<option value="">Бренд 4</option>
+											</select>
+										</div>
+										<div class="filter-select">
+											<select>
+												<option selected>Показания</option>
+												<option value="">Показания 1</option>
+												<option value="">Показания 2</option>
+												<option value="">Показания 3</option>
+												<option value="">Показания 4</option>
+											</select>
+										</div>
+										<div class="filter-select">
+											<select>
+												<option selected>Форма выпуска</option>
+												<option value="">Форма выпуска 1</option>
+												<option value="">Форма выпуска 2</option>
+												<option value="">Форма выпуска 3</option>
+												<option value="">Форма выпуска 4</option>
+											</select>
+										</div>
+										<div class="filter-select">
+											<select>
+												<option selected>Сортировать по</option>
+												<option value="">Популярности</option>
+												<option value="">Возрастанию цены</option>
+												<option value="">Убыванию цены</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-auto col-slider">
-						<div class="promo__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
-										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
-										</div>
+					
+					<div class="products__wrap">
+						<div class="row products-row">
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product01.png" alt="а-Токоферола ацетат капс 100 мг x30">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
 									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
+									<div class="item-content">
+										<a href="#" class="item__title">а-Токоферола ацетат капс 100 мг x30</a>
+										<div class="item-price">
+											<div class="price">590 руб.</div>
+											<div class="old-price">680 руб.</div>
 										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
-										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-
-							<div class="swiper-pagination"></div>
-							<div class="swiper-buttons">
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product02.png" alt="Аевит капс 200 мг x20">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Аевит капс 200 мг x20</a>
+										<div class="item-price">
+											<div class="price">1979 руб.</div>
+											<div class="old-price">2590 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product03.png" alt="Аквадетрим(вит Д3) капли вн прим 15000 МЕ/мл 10 мл x1">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Аквадетрим(вит Д3) капли вн прим 15000 МЕ/мл 10 мл x1</a>
+										<div class="item-price">
+											<div class="price">140 руб.</div>
+											<div class="old-price">289 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product04.png" alt="Антиоксидантная Защита Грассберг капс x60">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Антиоксидантная Защита Грассберг капс x60</a>
+										<div class="item-price">
+											<div class="price">5990 руб.</div>
+											<div class="old-price">6990 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product05.png" alt="Аскорбиновая к-та малина табл жев x10">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Аскорбиновая к-та малина табл жев x10</a>
+										<div class="item-price">
+											<div class="price">1550 руб.</div>
+											<div class="old-price">2900 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product06.png" alt="Азафен табл 25 мг уп конт яч/пач карт x50">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Азафен табл 25 мг уп конт яч/пач карт x50</a>
+										<div class="item-price">
+											<div class="price">1979 руб.</div>
+											<div class="old-price">2590 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product07.png" alt="Андрографис иммуно комплекс капс x30">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Андрографис иммуно комплекс капс x30</a>
+										<div class="item-price">
+											<div class="price">140 руб.</div>
+											<div class="old-price">289 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product08.png" alt="Акримекс табл п о пленочн 125 мг x30">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Акримекс табл п о пленочн 125 мг x30</a>
+										<div class="item-price">
+											<div class="price">5990 руб.</div>
+											<div class="old-price">6990 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product09.png" alt="Антистресс ВиТайм Аквастик сироп в стиках 10 мл x10">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Антистресс ВиТайм Аквастик сироп в стиках 10 мл x10</a>
+										<div class="item-price">
+											<div class="price">1550 руб.</div>
+											<div class="old-price">2900 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product02.png" alt="Аевит капс 200 мг x20">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Аевит капс 200 мг x20</a>
+										<div class="item-price">
+											<div class="price">1979 руб.</div>
+											<div class="old-price">2590 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product10.png" alt="Аминазин табл п о пленочн 25 мг уп конт яч/пач карт x10">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Аминазин табл п о пленочн 25 мг уп конт яч/пач карт x10</a>
+										<div class="item-price">
+											<div class="price">1979 руб.</div>
+											<div class="old-price">2590 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product11.png" alt="Андрографис иммуно комплекс капс x30">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Андрографис иммуно комплекс капс x30</a>
+										<div class="item-price">
+											<div class="price">140 руб.</div>
+											<div class="old-price">289 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product12.png" alt="Альфарона лиоф д/приг р-ра д/интраназ введ 50000 МЕ x1">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Альфарона лиоф д/приг р-ра д/интраназ введ 50000 МЕ x1</a>
+										<div class="item-price">
+											<div class="price">5990 руб.</div>
+											<div class="old-price">6990 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product13.png" alt="Антистресс ВиТайм Аквастик сироп в стиках 10 мл x10">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Антистресс ВиТайм Аквастик сироп в стиках 10 мл x10</a>
+										<div class="item-price">
+											<div class="price">1550 руб.</div>
+											<div class="old-price">2900 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl col-lg-3 col-sm-4 col-6">
+								<div class="item item-product">
+									<a href="#" class="item-picture">
+										<img src="i/product06.png" alt="Азафен табл 25 мг уп конт яч/пач карт x50">
+									</a>
+									<div class="item-actions">
+										<button class="btn item-fav js-toggle-fav">
+											<svg width="24" height="24">
+												<use xlink:href="#heart"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="item-content">
+										<a href="#" class="item__title">Азафен табл 25 мг уп конт яч/пач карт x50</a>
+										<div class="item-price">
+											<div class="price">1979 руб.</div>
+											<div class="old-price">2590 руб.</div>
+										</div>
+										<div class="item-controls">
+											<button class="btn btn-card added">
+												<span>В корзине</span>
+												<svg width="8" height="8">
+													<use xlink:href="#del"></use>
+												</svg>
+											</button>
+											<div class="quantity">
+												<button type="button" class="btn quantity__button js-down">-</button>
+												<span class="quantity__input">1</span>
+												<button type="button" class="btn quantity__button js-up">+</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="products__pagination">
+						<ul class="pagination">
+							<li class="page-item"><a class="page-link prew" href="#"></a></li>
+							<li class="page-item"><a class="page-link active" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">15</a></li>
+							<li class="page-item"><a class="page-link next" href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
 
+		<div class="section how">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 -col-info">
+						<div class="h2 section__title">Как оформить заказ</div>
+						<div class="how__text">Мы собрали самые актуальные вопросы от наших клиентов </div>
+						<a href="#" class="btn btn-secondary btn-questions">Все ответы на вопросы</a>
+					</div>
+					<div class="col-md-8 -col-accordion">
+						<div class="accordion" id="accordion-how">
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingOne">
+									<button class="btn accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+										<svg width="36" height="36">
+											<use xlink:href="#list"></use>
+										</svg>
+										<span>Выберите подходящий товар</span>
+									</button>
+								</div>
+								<div id="collapseOne" class="accordion-collapse collapse show">
+									<div class="accordion-body">
+										<p>Воспользуйтесь поиском, чтобы найти необходимый товар. Товар можно заказать только до 3 штук
+											одновременно и с ограничением по весу в 500 гр-1000 гр. <a href="#">Подробнее</a></p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingTwo">
+									<button class="btn accordion-button collapsed" data-bs-toggle="collapse"
+										data-bs-target="#collapseTwo">
+										<svg width="42" height="42">
+											<use xlink:href="#cardclick"></use>
+										</svg>
+										<span>Оформите заказ на сайте</span>
+									</button>
+								</div>
+								<div id="collapseTwo" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<p>Следуйте инструкциям и завершите оформление заказа</p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<div class="accordion-header" id="headingThree">
+									<button class="btn accordion-button collapsed" data-bs-toggle="collapse"
+										data-bs-target="#collapseThree">
+										<svg width="42" height="42">
+											<use xlink:href="#addcollection"></use>
+										</svg>
+										<span>Получите заказ в пункте выдачи</span>
+									</button>
+								</div>
+								<div id="collapseThree" class="accordion-collapse collapse">
+									<div class="accordion-body">
+										<p>Заберите заказ в удобное время</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+			
+
+
+
 		<div class="section catalog-section">
 			<div class="container">
-				<div class="section__top">
-					<div class="h2 section__title">Специальные предложения</div>
-					<a href="#" class="section__link">Показать все акции</a>
-				</div>
+				<div class="h2 section__title">Последние просмотренные товары</div>
 				<div class="swiper slider-cards">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -1073,6 +1672,7 @@
 	</div>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/fancyselect/fancyselect.js"></script>
 	<script src="js/common.js"></script>
 
 	<svg width="0" height="0" class="svg-sprite">

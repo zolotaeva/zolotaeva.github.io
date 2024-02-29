@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Home</title>
+	<title>Карточка товара</title>
 	<meta name="description" content="">
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +12,7 @@
 	<!-- style -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancyselect/fancyselect.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -201,7 +202,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-6 col-lg-5 col-md-7 col-sm-9 col-8 -col-search">
+					<div class="col-xl col-lg-3 col-sm-4 col-6-6 col-lg-5 col-md-7 col-sm-9 col-8 -col-search">
 						<div class="search-icon d-lg-none toggle-search"></div>
 						<div class="header__search">
 							<form class="form-search">
@@ -252,73 +253,41 @@
 		</div>
 	</header>
 	<main class="main">
-		<div class="section promo">
+		<div class="container">
+			<nav class="breadcrumbs__nav">
+				<ol class="breadcrumb">
+					<li class="breadcrumb-item"><a href="#">Главная</a></li>
+					<li class="breadcrumb-item"><a href="#">Каталог</a></li>
+					<li class="breadcrumb-item active">Название категории</li>
+				</ol>
+			</nav>
+			
+		</div>
+		<div class="section product">
 			<div class="container">
 				<div class="row">
-					<div class="col-auto col-promo">
-						<div class="promo__item" style="background: url(i/promo01.png);">
-							<div class="promo__title">Американские витамины и БАДы</div>
-							<div class="promo__text">Быстрое оформление
-								и доставка на сайте</div>
-							<a href="#" class="promo__link">В каталог</a>
+					<div class="col-lg-5">
+						<div class="product__img">
+							<img src="i/product.png" alt="">
 						</div>
 					</div>
-					<div class="col-auto col-slider">
-						<div class="promo__slider swiper">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
-										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
-										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
-										</div>
-									</div>
-								</div>
-								<div class="swiper-slide">
-									<div class="promo-wrap">
-										<div class="promo-title -fw-500">
-											<span class="text-lblue -fs-20">При бронировании на сайте</span>
-											<span class="text-black -fs-48">СКИДКА</span>
-											<span class="text-blue -fs-48">3%</span>
-										</div>
-										<div class="promo-text -fw-500">
-											Закажите нужный товар на сайте, получите скидку и заберите заказ в удобное время
-										</div>
-										<div class="promo-img">
-											<img src="i/promo-slide.png" alt="">
-										</div>
-									</div>
-								</div>
+					<div class="col-lg-7">
+						<div class="product__info">
+							<h1>Аквадетрим табл раствор 1000 МЕ x60</h1>
+							<ul class="option">
+								<li class="option-item">
+									<input type="radio" name="option1" class="custom-radiobox" id="radio1">
+									<label for="radio1">Со склада</label>
+								</li>
+								<li class="option-item">
+									<input type="radio" name="option1" class="custom-radiobox" id="radio2">
+									<label for="radio2">Уцененный товар</label>
+								</li>
+							</ul>
+							<div class="product__price">
+								<div class="price">1979 руб.</div>
+								<div class="old-price">2590 руб.</div>
 							</div>
-
-							<div class="swiper-pagination"></div>
-							<div class="swiper-buttons">
-								<div class="swiper-button-prev"></div>
-								<div class="swiper-button-next"></div>
-							</div>
-
 						</div>
 					</div>
 				</div>
@@ -326,10 +295,7 @@
 		</div>
 		<div class="section catalog-section">
 			<div class="container">
-				<div class="section__top">
-					<div class="h2 section__title">Специальные предложения</div>
-					<a href="#" class="section__link">Показать все акции</a>
-				</div>
+				<div class="h2 section__title">Последние просмотренные товары</div>
 				<div class="swiper slider-cards">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -506,78 +472,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="section popular-category">
-			<div class="container">
-				<div class="h2 section__title">Популярные категории</div>
-				<div class="row">
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__item" style="background: url(i/category01.png);">
-							<a href="#" class="popular-category__title">Фиточаи</a>
-							<a href="#" class="popular-category__link">
-								<span>В каталог</span>
-								<svg width="11" height="8">
-									<use xlink:href="#arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__item" style="background: url(i/category02.png);">
-							<a href="#" class="popular-category__title">Для печени</a>
-							<a href="#" class="popular-category__link">
-								<span>В каталог</span>
-								<svg width="11" height="8">
-									<use xlink:href="#arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__item" style="background: url(i/category03.png);">
-							<a href="#" class="popular-category__title">Прочие БАДы</a>
-							<a href="#" class="popular-category__link">
-								<span>В каталог</span>
-								<svg width="11" height="8">
-									<use xlink:href="#arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__item" style="background: url(i/category04.png);">
-							<a href="#" class="popular-category__title">Кальций</a>
-							<a href="#" class="popular-category__link">
-								<span>В каталог</span>
-								<svg width="11" height="8">
-									<use xlink:href="#arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__item" style="background: url(i/category05.png);">
-							<a href="#" class="popular-category__title">Дефицит йода</a>
-							<a href="#" class="popular-category__link">
-								<span>В каталог</span>
-								<svg width="11" height="8">
-									<use xlink:href="#arrow"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class="popular-category__items">
-							<div class="popular-category__item-more" style="background: url(i/category06.png);">
-								<a href="#" class="popular-category__title">Акции</a>
-							</div>
-							<div class="popular-category__item-more" style="background: url(i/category07.png);">
-								<a href="#" class="popular-category__title">Все категории</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<div class="section how">
 			<div class="container">
 				<div class="row">
@@ -641,271 +535,6 @@
 				</div>
 			</div>
 		</div>
-		<div class="section news">
-			<div class="container">
-				<div class="h2 section__title">Полезное</div>
-				<div class="news__tabs tab">
-					<div class="news__tabs-nav">
-						<button type="button" class="btn tab-btn tab-btn-active" data-target-id="0">Новости</button>
-						<button type="button" class="btn tab-btn" data-target-id="1">Подборки</button>
-						<button type="button" class="btn tab-btn" data-target-id="2">Статьи</button>
-					</div>
-					<div class="news__slider-nav">
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-					</div>
-
-
-					<div class="news__tabs-content">
-						<div class="tab-pane tab-pane-show" data-id="0">
-							<div class="tab-pane-wrap">
-								<a href="#" class="btn news__more">Все новости</a>
-								<div class="news__slider swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news01.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок новости о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание новости о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать новость
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news02.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок новости о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание новости о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать новость
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news03.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок новости о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание новости о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать новость
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news01.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок новости о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание новости о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать новость
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane" data-id="1">
-							<div class="tab-pane-wrap">
-								<a href="#" class="btn news__more">Все подборки</a>
-								<div class="news__slider swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news01.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок подборки о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание подборки о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать подборку
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news02.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок подборки о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание подборки о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать подборку
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news03.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок подборки о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание подборки о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать подборку
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news03.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок подборки о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание подборки о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать подборку
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="tab-pane" data-id="2">
-							<div class="tab-pane-wrap">
-								<a href="#" class="btn news__more">Все статьи</a>
-								<div class="news__slider swiper">
-									<div class="swiper-wrapper">
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news01.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок статьи о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание статьи о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать статью
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news02.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок статьи о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание статьи о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать статью
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news03.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок статьи о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание статьи о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать статью
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-										<div class="swiper-slide">
-											<div class="news__item">
-												<a href="#" class="news__img">
-													<img src="i/news03.png" alt="">
-												</a>
-												<div class="news__info">
-													<div class="date">23.01.23</div>
-													<div class="title">Заголовок статьи о пользе продаваемого продукта
-													</div>
-													<div class="anons">Краткое описание статьи о пользе продаваемого продукта</div>
-													<a href="#" class="link">Читать статью
-														<svg width="16" height="9">
-															<use xlink:href="#newsmore"></use>
-														</svg></a>
-												</div>
-
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-		</div>
-
 	</main>
 	<footer class="footer">
 		<div class="container">
@@ -1073,6 +702,7 @@
 	</div>
 	<script src="libs/bootstrap/bootstrap.min.js"></script>
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/fancyselect/fancyselect.js"></script>
 	<script src="js/common.js"></script>
 
 	<svg width="0" height="0" class="svg-sprite">
