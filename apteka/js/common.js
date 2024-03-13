@@ -132,6 +132,30 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	});
 
+	const productSliderThumbs = new Swiper('.js-thumbs-slider', {
+		spaceBetween: 10,
+		freeMode: true,
+		slidesPerView: 3,
+		watchSlidesProgress: true,
+		navigation: {
+			nextEl: '.thumbs__slide-next',
+			prevEl: '.thumbs__slide-prev',
+		},
+	});
+	
+	const productSliderTop = new Swiper('.js-product-slider', {
+		slidesPerView: 1,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		thumbs: {
+			swiper: productSliderThumbs,
+		
+		}
+		 
+	});
+
 	const showTab = (elTabBtn) => {
 		const elTab = elTabBtn.closest('.tab');
 		if (elTabBtn.classList.contains('tab-btn-active')) {

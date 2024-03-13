@@ -258,35 +258,230 @@
 				<ol class="breadcrumb">
 					<li class="breadcrumb-item"><a href="#">Главная</a></li>
 					<li class="breadcrumb-item"><a href="#">Каталог</a></li>
-					<li class="breadcrumb-item active">Название категории</li>
+					<li class="breadcrumb-item"><a href="#">Название категории</a></li>
+					<li class="breadcrumb-item active">Название товара</li>
 				</ol>
 			</nav>
-			
 		</div>
 		<div class="section product">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-5">
-						<div class="product__img">
-							<img src="i/product.png" alt="">
+				<div class="product__top">
+					<div class="row">
+						<div class="col-lg-4 col-md-5">
+							<div class="product__sliders">
+								<div class="sliders">
+									<div class="slider js-product-slider">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide slider__slide">
+												<a href="i/product.png" data-fancybox="gallery">
+													<img src="i/product.png" alt="">
+												</a>
+											</div>
+											<div class="swiper-slide slider__slide">
+												<a href="i/product.png" data-fancybox="gallery">
+													<img src="i/product.png" alt="">
+												</a>
+											</div>
+											<div class="swiper-slide slider__slide">
+												<a href="i/product.png" data-fancybox="gallery">
+													<img src="i/product.png" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="slider-thumbs">
+										<div class="slider-thumbs__container js-thumbs-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide slider-thumbs__slide">
+													<img src="i/product-min.png" alt="">
+												</div>
+												<div class="swiper-slide slider-thumbs__slide">
+													<img src="i/product-min.png" alt="">
+												</div>
+												<div class="swiper-slide slider-thumbs__slide">
+													<img src="i/product-min.png" alt="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="product__sliders-info">Внешний вид товара может отличаться от изображенного на фотографии</div>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-7">
+							<div class="product__info">
+								<div class="product__marker marker">
+									<span class="marker-item -blue">Бренд iHerb</span>
+									<span class="marker-item -green">iTested</span>
+									<span class="marker-item -orange">Супер-цена</span>
+								</div>
+								<div class="product__info-item">
+									<div class="instock -green">В наличии</div>
+									<!--<div class="instock -red">Не в наличии</div>-->
+									<h1>Zinc Caps 50 mg High</h1>
+									<div class="product__reating">
+										<div class="text gray-text">Рейтинг iHerb</div>
+										<div class="stars">
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star"></span>
+										</div>
+										<div class="product__reating-result">4.8</div>
+										<a href="#" class="product__reating-count">(24000 отзывов)</a>
+									</div>
+									<div class="product__reating">
+										<div class="text gray-text">Рейтинг Amazon</div>
+										<div class="stars">
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star checked"></span>
+											<span class="star"></span>
+										</div>
+										<div class="product__reating-result">4.8</div>
+										<a href="#" class="product__reating-count">(24000 отзывов)</a>
+									</div>
+									<div class="product__brend">
+										<span class="text gray-text">Производитель:</span>
+										<span class="text black-text">Акрихин ХФК АО</span>
+									</div>
+								</div>
+								<div class="product__info-item">
+									<div class="quantity">
+										<span class="text gray-text">Количество в упаковке:</span>
+										<span class="text black-text">100 шт.</span>
+									</div>
+									<div class="quantity-options">
+										<div class="quantity-item">
+											<input id="quantity1" type="radio" name="quantity" class="custom-radiobox">
+											<label for="quantity1">
+												<div class="text">100 шт.</div>
+												<div class="price">9999 руб.</div>
+												<div class="old-price">9999 руб.</div>
+											</label>
+										</div>
+										<div class="quantity-item">
+											<input id="quantity2" type="radio" name="quantity" class="custom-radiobox">
+											<label for="quantity2">
+												<div class="text">100 шт.</div>
+												<div class="price">9999 руб.</div>
+												<div class="old-price">9999 руб.</div>
+											</label>
+										</div>
+									</div>
+								</div>
+								<ul class="product__info-list">
+									<li>
+										<span class="text gray-text">Использовать до:</span>
+										<span class="text black-text">05.2025</span>
+									</li>
+									<li>
+										<span class="text gray-text">Вес в упаковке:</span>
+										<span class="text black-text">0,4 фунта</span>
+									</li>
+									<li>
+										<span class="text gray-text">Код товара:</span>
+										<span class="text black-text">ADS1241</span>
+									</li>
+									<li>
+										<span class="text gray-text">UPC код</span>
+										<span class="text black-text">8945424212121212</span>
+									</li>
+									<li>
+										<span class="text gray-text">Размеры упаковки:</span>
+										<span class="text black-text">0.4х0.4х0.4 м</span>
+									</li>
+								</ul>
+								<div class="product__info-sert">
+									<a href="#" class="btn btn-green">Посмотерть сертификат гарантии iTested</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3">
+							<div class="product__buy">
+								<div class="product__buy-item">
+									<div class="product__buy-title">Покупка товара</div>
+									<ul class="option">
+										<li class="option-item">
+											<input type="radio" name="option1" class="custom-radiobox" id="radio1">
+											<label for="radio1"><span>1550 руб.</span> Без уценки</label>
+										</li>
+										<li class="option-item">
+											<input type="radio" name="option1" class="custom-radiobox" id="radio2">
+											<label for="radio2"><span class="blue">2900 руб.</span> С уценкой</label>
+										</li>
+									</ul>
+									<div class="product__buy-btns">
+										<button class="btn btn-buy btn-secondary">В корзину</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+									<div class="product__buy-info">
+										Цены на сайте меняются в соответствии с текущим курсом валют
+									</div>
+								</div>
+								<div class="product__buy-item">
+									<div class="product__buy-delivery">
+										<div class="title">Автодоставка</div>
+										<div class="text">Скидка при доставке условия доставки товара Скидка при доставке условия доставки товара Скидка при доставке условия доставки товара</div>
+									</div>
+									<div class="product__buy-favorite">
+										<button class="btn btn-favorite">
+											<svg width="16" height="16">
+												<use xlink:href="#heart"></use>
+											</svg>
+											В избранное</button>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-7">
-						<div class="product__info">
-							<h1>Аквадетрим табл раствор 1000 МЕ x60</h1>
-							<ul class="option">
-								<li class="option-item">
-									<input type="radio" name="option1" class="custom-radiobox" id="radio1">
-									<label for="radio1">Со склада</label>
-								</li>
-								<li class="option-item">
-									<input type="radio" name="option1" class="custom-radiobox" id="radio2">
-									<label for="radio2">Уцененный товар</label>
-								</li>
-							</ul>
-							<div class="product__price">
-								<div class="price">1979 руб.</div>
-								<div class="old-price">2590 руб.</div>
+				</div>
+				<div class="product__bottom">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="product__bottom-section">
+								<div class="title">Описание препарата</div>
+								<div class="description">
+									<ul>
+										<li>Рыбий жир омега-3 премиального качества от California Gold Nutrition®</li>
+										<li>Содержит рыбий жир высокой степени очистки от мировых производителей</li>
+										<li>Концентрированный и подвергнутый молекулярной дистилляции продукт</li>
+										<li>Поддерживает общий иммунитет*</li>
+										<li>Помогает поддерживать оптимальный липидный профиль*</li>
+										<li>Не содержит глютена, ГМО и сои</li>
+										<li>Производится на предприятии, которое имеет регистрацию текущей надлежащей производственной практики (cGMP) и проходит независимые проверки</li>
+										<li>Гарантия 100% Gold Guarantee</li>
+									</ul>
+									<p>Жирные кислоты омега-3 — это один из видов «полезных жиров», содержащихся во многих видах рыбы, которые организм может использовать для поддержки своих различных функций. Рыбий жир омега-3 премиального качества от California Gold Nutrition содержит несколько омега-3 жирных кислот, в том числе ДГК и ЭПК, которые ежедневно помогают получать достаточное количество этих питательных веществ, способствуя здоровью многих систем организма*.</p>
+									<p>Полезные свойства добавок с омега-3 Если вы не можете получить необходимое количество омега-3 из своего рациона, ежедневная добавка может помочь вам поддерживать достаточный уровень полезных жиров. Такой подход связан с поддержанием липидного профиля*. Кроме того, считается, что потребление необходимого количества омега-3 обеспечивает другие полезные для здоровья свойства, в частности, снижение риска возникновения сердечно-сосудистых заболеваний, поддержание нормальной работы мозга и общего иммунитета*.</p>
+									<p>Рыбий жир омега-3 премиального качества от California Gold Nutrition — продукт молекулярной дистилляции, который содержит 180 мг ЭПК и 120 мг ДГК в одной капсуле из высокоочищенного и концентрированного натурального рыбьего жира от мировых производителей, который соответствует строгим стандартам контроля качества. Капсулы из рыбьего желатина не содержат свиных или бычьих ингредиентов и производятся в Калифорнии (США) из сырья от мировых производителей.</p>
+								</div>
+
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="product__bottom-section">
+								<div class="title">Пищевая ценность</div>
+									<ul class="product__info-list">
+										<li>
+											<span class="text gray-text">Размер порции:</span>
+											<span class="text black-text">A11CC05 (Colecalciferol)</span>
+										</li>
+										<li>
+											<span class="text gray-text">Порций в упаковке</span>
+											<span class="text black-text">50</span>
+										</li>
+									</ul>
+									<div class="description">
+									<p>Жирные кислоты омега-3 — это один из видов «полезных жиров», содержащихся во многих видах рыбы, которые организм может использовать для поддержки своих различных функций. Рыбий жир омега-3 премиального качества от California Gold Nutrition содержит несколько омега-3 жирных кислот, в том числе ДГК и ЭПК, которые ежедневно помогают получать достаточное количество этих питательных веществ, способствуя здоровью многих систем организма*.</p>
+									<p>Полезные свойства добавок с омега-3 Если вы не можете получить необходимое количество омега-3 из своего рациона, ежедневная добавка может помочь вам поддерживать достаточный уровень полезных жиров. Такой подход связан с поддержанием липидного профиля*. Кроме того, считается, что потребление необходимого количества омега-3 обеспечивает другие полезные для здоровья свойства, в частности, снижение риска возникновения сердечно-сосудистых заболеваний, поддержание нормальной работы мозга и общего иммунитета*.</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -295,7 +490,7 @@
 		</div>
 		<div class="section catalog-section">
 			<div class="container">
-				<div class="h2 section__title">Последние просмотренные товары</div>
+				<div class="h2 section__title">Может пригодиться</div>
 				<div class="swiper slider-cards">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -535,6 +730,186 @@
 				</div>
 			</div>
 		</div>
+		<div class="section catalog-section">
+			<div class="container">
+				<div class="h2 section__title">Последние просмотренные товары</div>
+				<div class="swiper slider-cards">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="item item-product">
+								<a href="#" class="item-picture">
+									<img src="i/product01.png" alt="а-Токоферола ацетат капс 100 мг x30">
+								</a>
+								<div class="item-actions">
+									<button class="btn item-fav js-toggle-fav">
+										<svg width="24" height="24">
+											<use xlink:href="#heart"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="item-content">
+									<a href="#" class="item__title">а-Токоферола ацетат капс 100 мг x30</a>
+									<div class="item-price">
+										<div class="price">590 руб.</div>
+										<div class="old-price">680 руб.</div>
+									</div>
+									<div class="item-controls">
+										<button class="btn btn-card added">
+											<span>В корзине</span>
+											<svg width="8" height="8">
+												<use xlink:href="#del"></use>
+											</svg>
+										</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item item-product">
+								<a href="#" class="item-picture">
+									<img src="i/product02.png" alt="Аевит капс 200 мг x20">
+								</a>
+								<div class="item-actions">
+									<button class="btn item-fav js-toggle-fav">
+										<svg width="24" height="24">
+											<use xlink:href="#heart"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="item-content">
+									<a href="#" class="item__title">Аевит капс 200 мг x20</a>
+									<div class="item-price">
+										<div class="price">1979 руб.</div>
+										<div class="old-price">2590 руб.</div>
+									</div>
+									<div class="item-controls">
+										<button class="btn btn-card">
+											<span>В корзину</span>
+											<svg width="8" height="8">
+												<use xlink:href="#del"></use>
+											</svg>
+										</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item item-product">
+								<a href="#" class="item-picture">
+									<img src="i/product03.png" alt="Аквадетрим(вит Д3) капли вн прим 15000 МЕ/мл 10 мл x1">
+								</a>
+								<div class="item-actions">
+									<button class="btn item-fav js-toggle-fav">
+										<svg width="24" height="24">
+											<use xlink:href="#heart"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="item-content">
+									<a href="#" class="item__title">Аквадетрим(вит Д3) капли вн прим 15000 МЕ/мл 10 мл x1</a>
+									<div class="item-price">
+										<div class="price">140 руб.</div>
+										<div class="old-price">289 руб.</div>
+									</div>
+									<div class="item-controls">
+										<button class="btn btn-card">
+											<span>В корзину</span>
+											<svg width="8" height="8">
+												<use xlink:href="#del"></use>
+											</svg>
+										</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item item-product">
+								<a href="#" class="item-picture">
+									<img src="i/product04.png" alt="Антиоксидантная Защита Грассберг капс x60">
+								</a>
+								<div class="item-actions">
+									<button class="btn item-fav js-toggle-fav">
+										<svg width="24" height="24">
+											<use xlink:href="#heart"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="item-content">
+									<a href="#" class="item__title">Антиоксидантная Защита Грассберг капс x60</a>
+									<div class="item-price">
+										<div class="price">5990 руб.</div>
+										<div class="old-price">6990 руб.</div>
+									</div>
+									<div class="item-controls">
+										<button class="btn btn-card">
+											<span>В корзину</span>
+											<svg width="8" height="8">
+												<use xlink:href="#del"></use>
+											</svg>
+										</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="item item-product">
+								<a href="#" class="item-picture">
+									<img src="i/product05.png" alt="Аскорбиновая к-та малина табл жев x10">
+								</a>
+								<div class="item-actions">
+									<button class="btn item-fav js-toggle-fav">
+										<svg width="24" height="24">
+											<use xlink:href="#heart"></use>
+										</svg>
+									</button>
+								</div>
+								<div class="item-content">
+									<a href="#" class="item__title">Аскорбиновая к-та малина табл жев x10</a>
+									<div class="item-price">
+										<div class="price">1550 руб.</div>
+										<div class="old-price">2900 руб.</div>
+									</div>
+									<div class="item-controls">
+										<button class="btn btn-card">
+											<span>В корзину</span>
+											<svg width="8" height="8">
+												<use xlink:href="#del"></use>
+											</svg>
+										</button>
+										<div class="quantity">
+											<button type="button" class="btn quantity__button js-down">-</button>
+											<span class="quantity__input">1</span>
+											<button type="button" class="btn quantity__button js-up">+</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 	</main>
 	<footer class="footer">
 		<div class="container">
