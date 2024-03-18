@@ -27,15 +27,19 @@ document.addEventListener("DOMContentLoaded", () => {
 			mobileModal = document.querySelector('.mobile-modal'),
 			menuTop = document.querySelector('#header_menu');
 		
-		const parentLinkMenu = document.querySelectorAll('.catalog-link.parent');
+		//const parentLinkMenu = document.querySelectorAll('.catalog-link.parent');
+		const mobileDropLink = document.querySelectorAll('.mobile-modal .drop-link');
+		//const mobileDropdown = document.querySelectorAll('.mobile-modal .catalog-dropdown');
+
 		
-		parentLinkMenu.forEach((link) => {
+		mobileDropLink.forEach((link) => {
 			link.addEventListener('click', (e) => {
 				e.preventDefault();
-				if (link.parentElement.classList.contains('active')) {
-					link.parentElement.classList.remove('active');
+				console.log(link.parentElement.nextElementSibling);
+				if (link.parentElement.nextElementSibling.classList.contains('dropdown-active')) {
+					link.parentElement.nextElementSibling.classList.remove('dropdown-active');
 				} else {
-					link.parentElement.classList.add('active');
+					link.parentElement.nextElementSibling.classList.add('dropdown-active');
 				}
 				
 			});
@@ -212,8 +216,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		showTab(elTabBtn);
 	});
 
+	const sidebar = document.querySelector('.sidebar'),
+		sidebarDropLink = sidebar.querySelectorAll('.drop-link'),
+		sidebarDropdown = sidebar.querySelectorAll('.dropdown');
 
-	
+	sidebarDropLink.forEach((item) => {
+		item.addEventListener('click', function (e) {
+			e.preventDefault();
+			let parent = e.target.parentElement;
+			console.log(parent.nextElementSibling);
+			if (parent.nextElementSibling.classList.contains('dropdown-active')) {
+				e.target.classList.add('active');
+				parent.nextElementSibling.classList.remove('dropdown-active');
+			} else {
+				e.target.classList.remove('active');
+				parent.nextElementSibling.classList.add('dropdown-active');
+			}
+		})
+		})
 
 	
 	window.addEventListener('resize', updateMobileDesign);

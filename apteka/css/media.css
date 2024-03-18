@@ -98,12 +98,11 @@
 	#header_menu.collapse:not(.show){display: block;}
 	#header_menu .mobile-bg{display: block;}
 	.catalog-dropdown{position: static; width: 100%; padding: 10px 0;}
-	.active .catalog-dropdown{visibility: visible; display:block; opacity: 1;}
-	.catalog-link__item.active .catalog-link.parent:after{transform: rotate(-90deg);}
-	.catalog-link__item:hover .catalog-dropdown{opacity: 0; visibility: hidden; display: none;}
-	.catalog-link__item.active .catalog-dropdown{opacity: 1; visibility: visible; display: block;}
+	.filter-select{margin-bottom: 5px;}
 	.product__sliders{max-width: none;}
 	.product__info{margin-top: 40px;}
+	.products__filter{padding: 10px 0; }
+	.fsb-button{font-size: 14px!important;}
 }
 @media (max-width: 575px) {
 	.header__search .btn-search{background-image: url('data:image/svg+xml,<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4 2.3999C5.99122 2.3999 2.40002 5.9911 2.40002 10.3999C2.40002 14.8087 5.99122 18.3999 10.4 18.3999C12.3172 18.3999 14.0779 17.7191 15.4578 16.589L20.2344 21.3655C20.3081 21.4423 20.3964 21.5036 20.4941 21.5458C20.5918 21.5881 20.697 21.6104 20.8034 21.6115C20.9098 21.6125 21.0154 21.5924 21.114 21.5521C21.2125 21.5119 21.302 21.4524 21.3773 21.3772C21.4525 21.3019 21.512 21.2124 21.5523 21.1138C21.5925 21.0153 21.6127 20.9097 21.6116 20.8033C21.6105 20.6968 21.5882 20.5917 21.546 20.494C21.5037 20.3963 21.4424 20.308 21.3657 20.2343L16.5891 15.4577C17.7192 14.0778 18.4 12.3171 18.4 10.3999C18.4 5.9911 14.8088 2.3999 10.4 2.3999ZM10.4 3.9999C13.9441 3.9999 16.8 6.8558 16.8 10.3999C16.8 13.944 13.9441 16.7999 10.4 16.7999C6.85593 16.7999 4.00002 13.944 4.00002 10.3999C4.00002 6.8558 6.85593 3.9999 10.4 3.9999Z" fill="white"/></svg>'); background-repeat: no-repeat; background-size: 24px 24px; font-size: 0; display: flex; align-items: center; justify-content: center;padding: 0px 18px;    line-height: 35px; background-position: center;}
