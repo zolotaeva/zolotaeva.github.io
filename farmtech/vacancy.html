@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Вакансии</title>
+	<meta name="description" content="">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#5C93F5">
+	<!-- style -->
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="libs/fancyselect/fancyselect.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="page">
+	<div id="preloader">
+		<div class="loader"></div>
+	</div>
+	<header class="header">
+		<div class="container">
+			<div class="row -header-row">
+				<div class="col-auto -col-logo">
+					<a href="#" class="logotype">
+						<img src="i/logo.svg" alt="logotype">
+					</a>
+				</div>
+				<div class="col-xl-4 -col-navbar">
+					<nav class="navbar navbar-expand-md">
+						<button class="btn btn-burger js-toggle-menu"></button>
+						<div class="collapse navbar-collapse" id="header_menu">
+							<ul class="navbar-nav header-navbar -fs-18 -fw-500">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Курсы</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Вакансии</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Обратная связь</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Контакты</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+				<div class="col-auto -col-phone">
+					<div class="header__phone -fs-22 -fw-600">
+						<a href="tel:88461234567">8 (846) 123-45-67</a>
+					</div>
+				</div>
+				<div class="col-auto -col-search">
+					<button class="btn toggle-search"></button>
+					<div class="header__search">
+						<button class="btn close-search"></button>
+						<form class="form-search">
+							<span class="icon"></span>
+							<input class="form-control -fs-20 -fw-300" type="search" placeholder="Поиск">
+							<button class="btn btn-search" type="submit"></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-auto -col-visually">
+					<div class="header__visually">
+						<button class="btn btn-visually">
+							<span class="icon"></span>
+							<span class="text">Версия для слабовидящих</span>
+						</button>
+					</div>
+				</div>
+				<div class="col-auto -col-login">
+					<div class="header__login">
+						<a href="#" class="btn btn-login -fs-20 -fw-500">
+							<span class="icon"></span>
+							<span class="text">Личный кабинет</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="section promo">
+			<div class="container">
+				<div class="promo__wrap">
+					<div class="promo__info">
+						<div class="promo__title -fw-700 -fs-68">
+							Вакансии
+							<span class="bg-blue">
+								для фармспециалистов
+							</span>
+						</div>
+						<div class="promo__btns">
+							<a href="#" class="btn btn-primary">Посмотреть вакансии</a>
+						</div>
+					</div>
+					<div class="promo__img -stars">
+						<img src="i/promo3.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section vacancy">
+			<div class="container">
+				<div class="vacancy__top">
+					<div class="row">
+						<div class="col-xl-9">
+							<div class="vacancy__filter filter">
+								<div class="filter__title -fs-24 -fw-600">Фильтры</div>
+								<div class="filter__item">
+									<select>
+										<option selected>Упорядочить по:</option>
+										<option value="">Новизне</option>
+										<option value="">Алфавиту</option>
+
+									</select>
+								</div>
+								<div class="filter__item">
+									<select>
+										<option selected>Выбрать регион</option>
+										<option value="">регион 1</option>
+										<option value="">регион 2</option>
+										<option value="">регион 3</option>
+										<option value="">регион 4</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-3">
+							<div class="vacancy__search">
+								<form class="form-search">
+									<input class="form-control -fs-20 -fw-300" type="search" placeholder="Поиск">
+									<button class="btn btn-search" type="submit"></button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row item-row">
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-6">
+						<div class="vacancy__item">
+							<div class="row vacancy__item-row">
+								<div class="col-auto">
+									<div class="vacancy__region -fs-20 -fw-500">Название региона</div>
+								</div>
+								<div class="col-auto">
+									<div class="vacancy__data -fs-20">21.01.24</div>
+								</div>
+							</div>
+							<div class="vacancy__content">
+								<div class="vacancy__title -fw-600 -fs-36">Название курса, возможно <br>в 2 строки</div>
+								<div class="vacancy__text -fs-20">Краткое описание Курсы фармацевтики для повышения навыков: большой выбор и доступные способы обучения.</div>
+								<div class="vacancy__actions">
+									<button class="btn btn-primary">Откликнуться</button>
+									<div class="vacancy__price -fw-600 -fs-32">
+										999 999 руб./месяц
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section feedback">
+			<div class="container">
+				<div class="row feedback-row">
+					<div class="col-lg-6">
+						<div class="feedback__wrap">
+							<div class="section__title">Остались вопросы? <br>Задайте их нам!</div>
+							<form action="" class="form">
+								<div class="form-group mb-3">
+									<div class="mb-3">
+										<input type="text" class="form-control" placeholder="Ваше имя">
+									</div>
+									<div class="mb-3">
+										<input type="text" class="form-control phone" placeholder="Телефон для связи">
+									</div>
+									<div class="mb-3">
+										<textarea class="form-control" rows="3" placeholder="Ваш вопрос или комментарий"></textarea>
+									</div>
+									<div class="mb-3 -center">
+										<button class="btn btn-primary btn-submit">Задать вопрос</button>
+									</div>
+									<div class="policy -center">
+										Нажимая кнопку "Задать вопрос", вы соглашаетесь с политикой конфиденциальности.
+									</div>
+								</div>
+				
+							</form>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="feedback__img">
+							<img src="i/feedback.png" alt="">
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-wrap">
+				<div class="row footer-row">
+					<div class="col-lg-3 col-md-6 -col-logo">
+						<div class="footer-column">
+							<div class="logotype">
+								<img src="i/logo.svg" alt="logotype">
+								<span class="logotype__text -fs-24">АН ПОО «Поволжский фармтехникум»</span>
+							</div>
+							<div class="footer__policy">
+								<a href="#">Политика обработки персональных данных</a>
+								<a href="#">Оферта</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6 -col-contacts">
+						<div class="footer__title">Контакты:</div>
+						<div class="footer__text -fs-20">
+							<a href="tel:88461234578">8 846 123-45-78</a>
+							<a href="mailto:email@mail.ru">email@mail.ru</a>
+							<p>Юридический адрес: юр. адрес образовательной организации</p>
+							<p>С 08:00 до 19:00</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 col-6 -col-job">
+						<div class="footer__title">Вопросы по вакансиям:</div>
+						<div class="footer__text -fs-20">
+							<a href="tel:88461234578">8 846 123-45-78</a>
+							<a href="mailto:email@mail.ru">email@mail.ru</a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 -col-subscription">
+						<div class="footer__title">Подпишитесь на рассылку:</div>
+						<div class="footer__text -fs-20">
+							<p>Оставьте свои контактные данные для уведомлений о новых курсах и акциях</p>
+						</div>
+						<div class="subscription">
+							<form class="subscription__form">
+								<input type="email" class="form-control" placeholder="E-mail">
+								<button class="btn btn-primary">
+									Подписаться
+								</button>
+							</form>
+							<div class="subscription__text -fs-15">Нажимая кнопку <span>Подписаться</span>, я соглашаюсь с <a href="#">политикой обработки персональных данных</a>.</div>
+						</div>
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="libs/bootstrap/bootstrap.min.js"></script>
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+	<script src="libs/fancyselect/fancyselect.js"></script>
+	<script src="js/common.js"></script>
+</body>
+
+</html>
