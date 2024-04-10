@@ -40,4 +40,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+	ymaps.ready(function () {
+		var myMap = new ymaps.Map('map', {
+			center: [53.18708907123992,50.094066499999926],
+			zoom: 15,
+
+		}, {
+			searchControlProvider: 'yandex#search'
+		}),
+
+			myPlacemark = new ymaps.Placemark([53.18708907123992,50.094066499999926], {
+				hintContent: 'Текст при наведении',
+				balloonContent: 'Описание'
+			}, {
+				preset: 'islands#blueEducationIcon',
+				iconColor: '#1068D7'
+				
+			});
+			myMap.controls.remove('searchControl');
+		myMap.geoObjects
+			.add(myPlacemark);
+
+});
+			
+			
+	
+
+
+
 });
