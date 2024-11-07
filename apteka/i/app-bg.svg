@@ -1,0 +1,36 @@
+<svg width="1160" height="450" viewBox="0 0 1160 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_40_189)">
+<circle cx="151.5" cy="333.5" r="161.5" fill="#B8ECFF" fill-opacity="0.5"/>
+</g>
+<g filter="url(#filter1_f_40_189)">
+<circle cx="86" cy="92" r="203" fill="#DFEBFF" fill-opacity="0.5"/>
+</g>
+<g filter="url(#filter2_f_40_189)">
+<circle cx="1038" cy="375" r="203" fill="#5C93F5" fill-opacity="0.5"/>
+</g>
+<g filter="url(#filter3_f_40_189)">
+<circle cx="860.5" cy="416.5" r="161.5" fill="#5CCCF5" fill-opacity="0.5"/>
+</g>
+<defs>
+<filter id="filter0_f_40_189" x="-160" y="22" width="623" height="623" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_40_189"/>
+</filter>
+<filter id="filter1_f_40_189" x="-267" y="-261" width="706" height="706" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_40_189"/>
+</filter>
+<filter id="filter2_f_40_189" x="685" y="22" width="706" height="706" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_40_189"/>
+</filter>
+<filter id="filter3_f_40_189" x="549" y="105" width="623" height="623" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="75" result="effect1_foregroundBlur_40_189"/>
+</filter>
+</defs>
+</svg>
